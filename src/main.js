@@ -9,9 +9,17 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// 引入翻译语言包
+import i18n from './i18n'
+
+// 引入 store
+import store from './store'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  i18n,
+  store,
   router,
   components: { App },
   template: '<App/>'

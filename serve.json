@@ -1,5 +1,0 @@
-{
-  "routes": {
-    "/login": "POST /login"
-  }
-}

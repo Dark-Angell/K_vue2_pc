@@ -1,12 +1,14 @@
 <template>
   <div>
-
+    <p>
+      {{ $t('MingCheng') }}
+    </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Translate',
   data () {
     return {
       
@@ -14,4 +16,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+div {
+  padding: 30px;
+}
+</style>
 
