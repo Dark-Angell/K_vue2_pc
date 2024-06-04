@@ -19,13 +19,11 @@ const messages = {
   Ty_lang,
   Zh_lang
 }
-console.log('语言', messages)
 
 // 设置默认得语言包
 const DEFAULT_LANG = 'Zh_lang'
 const LOCALE_KEY = 'language'
 
-console.log('window.localStorage.getItem', window.localStorage.getItem(LOCALE_KEY))
 
 // 判断是否存在缓存 并设置默认语言包
 if(!window.localStorage.getItem(LOCALE_KEY)) {

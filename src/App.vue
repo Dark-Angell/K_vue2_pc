@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <div v-for="(item, index) of actions" :key="index">
-      <button @click="translate(item, index)">{{item.text}}</button>
-    </div>
     <router-view/>
   </div>
 </template>
@@ -15,15 +12,6 @@ export default {
     return {
       ws: null,
       wsUrl: 'ws://localhost:3000',
-      language: null,
-      actions: [
-        {text: '中文翻译', lang: 'Zh_lang',},
-        {text: '英文翻译', lang: 'En_lang',},
-        {text: '泰文翻译', lang: 'Ty_lang',},
-        {text: '英文翻译', lang: 'En_lang', },
-        { text: '日语翻译', lang: 'Ry_lang',  },
-        { text: '韩语翻译', lang: 'Hy_lang', },
-      ]
     }
   },
   mounted() {
@@ -56,10 +44,15 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: 14px "Microsoft Yahei";
+  color: #333;
+}
+#app{
+  height: 100%;
 }
 </style>
 
