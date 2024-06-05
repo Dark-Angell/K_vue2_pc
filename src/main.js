@@ -12,6 +12,10 @@ Vue.config.productionTip = false
 // 引入翻译语言包
 import i18n from './i18n'
 
+// 引入 Websocket, 并挂载在原型上， $socketApi 在所有 vue 实例都可以访问
+import socketApi from './utils/socket'
+Vue.prototype.$socketApi = socketApi
+
 // 引入 store
 import store from './store'
 
