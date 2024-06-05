@@ -6,6 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev_test": "webpack-dev-server --inline --progress --env=test --config build/webpack.dev.conf.js",
+    "dev_prod": "webpack-dev-server --inline --progress --env=prod --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js"
   },

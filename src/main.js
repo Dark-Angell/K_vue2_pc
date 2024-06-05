@@ -19,6 +19,9 @@ Vue.prototype.$socketApi = socketApi
 // 引入 store
 import store from './store'
 
+// 全局 URL
+Vue.prototype.$baseUrl = process.env.baseUrl
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

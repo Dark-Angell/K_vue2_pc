@@ -6,7 +6,7 @@
 </template>
 
 <script>
-
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -14,10 +14,15 @@ export default {
     }
   },
   mounted() {
-    this.$socketApi.initWebSocket(this.getsocketResult)
+    // this.$socketApi.initWebSocket(this.getsocketResult)
     console.log(this)
+    console.log(process.env)
+    this.init()
   },
   methods: {
+    init() {
+      axios.post(process.env.baseUrl , 6454)
+    },
     getsocketResult(data) {
       console.log(data)
       this.msg = data
